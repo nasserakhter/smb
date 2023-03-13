@@ -5,9 +5,10 @@
   "display": "Node 18 + ESM + Strictest",
   "compilerOptions": {
     "lib": [
-      "es2022"
+      "es2022",
+      "DOM"
     ],
-    "module": "es2022",
+    "module": "CommonJS",
     "target": "es2022",
     "strict": true,
     "esModuleInterop": true,
@@ -27,5 +28,8 @@
     "importsNotUsedAsValues": "error",
     "checkJs": true,
     "baseUrl": "./src"
-  }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }

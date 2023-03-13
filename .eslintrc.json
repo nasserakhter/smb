@@ -16,7 +16,14 @@
                 "*.tsx"
             ],
             "rules": {
-                "@typescript-eslint/indent": ["error", 2]
+                "@typescript-eslint/quotes": "off",
+                "@typescript-eslint/comma-dangle": "off",
+                "@typescript-eslint/indent": ["error", 2],
+                "@typescript-eslint/naming-convention": ["error", {
+                    "selector": "default",
+                    "format": ["camelCase", "PascalCase", "UPPER_CASE"]
+                }],
+                "@typescript-eslint/object-curly-spacing": ["error", "always"]
             }
         }
     ],

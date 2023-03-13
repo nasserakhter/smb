@@ -2,14 +2,16 @@
   "name": "smb",
   "version": "1.0.0",
   "description": "A simple SMB library that interacts with the local smbclient binary. Can also be run in browsers but requires an HTTP proxy and server to run the client binary itself on.",
-  "main": "index.ts",
-  "repository": "https://github.com/nasserakhter/node-smb",
+  "main": "./src/index.ts",
+  "repository": "https://github.com/nasserakhter/smb",
   "author": "Nasser Akhter",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.ts"
+    "dev": "nodemon ./src/index.ts"
   },
   "devDependencies": {
+    "@types/hasbin": "^1.2.0",
+    "@types/node": "^18.15.0",
     "@typescript-eslint/eslint-plugin": ">=5.43.0",
     "@typescript-eslint/parser": ">=5.43.0",
     "eslint": ">=8.0.0",
@@ -23,6 +25,7 @@
     "typescript": ">=4.4"
   },
   "dependencies": {
-    "browser-or-node": "^2.1.1"
+    "browser-or-node": "^2.1.1",
+    "hasbin": "^1.2.3"
   }
 }
